@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
+import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -9,6 +10,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import Slide from '@mui/material/Slide';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const pages = [
   {title: 'Home', appBarSx: {display: { xs:"none", md: "block" }}},
@@ -17,7 +20,22 @@ const pages = [
   {title: 'Contact me', appBarSx: {display: { xs:"none", md: "block" }}},
 ];
 
-const Navbar = () => {
+function HideOnScroll(props) {
+  const { children } = props;
+  const trigger = useScrollTrigger();
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
+HideOnScroll.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+const Navbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -29,7 +47,8 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <HideOnScroll {...props}>
+    <AppBar>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -106,6 +125,7 @@ const Navbar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    </HideOnScroll>
   );
 }
 
