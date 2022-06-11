@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Slide from '@mui/material/Slide';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
+// Returns a list of pages.
 const pages = [
   {title: 'Home', appBarSx: {display: { xs:"none", md: "block" }}},
   {title: 'About me', appBarSx: {display: { xs:"none", md: "block" }}},
@@ -20,6 +21,7 @@ const pages = [
   {title: 'Contact me', appBarSx: {display: { xs:"none", md: "block" }}},
 ];
 
+// Hide On Scroll
 function HideOnScroll(props) {
   const { children } = props;
   const trigger = useScrollTrigger();
@@ -31,10 +33,12 @@ function HideOnScroll(props) {
   );
 }
 
+// HideOnScroll. propTypes
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
+// Creates a navigation bar with a menu and a title.
 const Navbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -115,6 +119,7 @@ const Navbar = (props) => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
+              {/* Adds a menu item to the navigation menu. */}
               {pages.map((page) => (
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.title}</Typography>
