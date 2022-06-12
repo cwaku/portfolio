@@ -50,6 +50,13 @@ function App() {
     <div ref={app} className="App">
       <Navbar />
       <div ref={scrollContainer} className="scroll-container">
+      <div className="content">
+        {/* list images and texts */}
+        <p>Hello, I'm a software developer based in New York, NY. I'm currently working on a project called <a href="https://www.github.com/joshuacox/joshuacox.github.io">joshuacox.github.io</a>.</p>
+        <p>I'm also a student at the University of Washington studying Computer Science and Engineering.</p>
+        <p>I'm currently looking for a full-time position as a software developer.</p>
+        <p>I'm also a fan of the following:</p>
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />

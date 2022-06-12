@@ -60,7 +60,7 @@ const Navbar = (props) => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               marginLeft: { xs: "0", md: "50px" },
@@ -72,9 +72,7 @@ const Navbar = (props) => {
               textDecoration: 'none',
             }}
           >
-            <Link style={{textDecoration: "none", color: "white"}} to="/">
-              RM
-            </Link>
+            RM
           </Typography>
           <Box sx={{ flexGrow: 0.1, display: { xs: 'flex' } }}>
             {pages.map((page) => {
