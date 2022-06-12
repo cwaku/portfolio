@@ -12,13 +12,14 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Slide from '@mui/material/Slide';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import { Link } from 'react-router-dom';
 
 // Returns a list of pages.
 const pages = [
   {title: 'Home', appBarSx: {display: { xs:"none", md: "block" }}},
-  {title: 'About me', appBarSx: {display: { xs:"none", md: "block" }}},
+  {title: 'About', appBarSx: {display: { xs:"none", md: "block" }}},
   {title: 'Projects', appBarSx: {display: { xs:"block" }}},
-  {title: 'Contact me', appBarSx: {display: { xs:"none", md: "block" }}},
+  {title: 'Contact', appBarSx: {display: { xs:"none", md: "block" }}},
 ];
 
 // Hide On Scroll
@@ -71,7 +72,9 @@ const Navbar = (props) => {
               textDecoration: 'none',
             }}
           >
-            RM
+            <Link style={{textDecoration: "none", color: "white"}} to="/">
+              RM
+            </Link>
           </Typography>
           <Box sx={{ flexGrow: 0.1, display: { xs: 'flex' } }}>
             {pages.map((page) => {
@@ -85,7 +88,9 @@ const Navbar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={sx}
               >
-                {page.title}
+                <Link style={{textDecoration: "none", color: "white"}} to={`/${page.title.toLowerCase()}`}>
+                  {page.title}
+                </Link>
               </Button>
             })}
           </Box>
@@ -122,7 +127,9 @@ const Navbar = (props) => {
               {/* Adds a menu item to the navigation menu. */}
               {pages.map((page) => (
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <Typography textAlign="center">
+                    <Link style={{textDecoration: "none", color: "white"}} to={`/${page.title.toLowerCase()}`}>{page.title}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
