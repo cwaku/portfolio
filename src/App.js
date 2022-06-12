@@ -50,46 +50,6 @@ function App() {
     <div ref={app} className="App">
       <Navbar />
       <div ref={scrollContainer} className="scroll-container">
-      <h2> Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2> Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll </h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll </h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2> Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll </h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
-      <h2>Scroll Container</h2>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
