@@ -53,7 +53,10 @@ const Navbar = (props) => {
 
   return (
     <HideOnScroll {...props}>
-      <AppBar>
+      <AppBar
+      sx={{
+        backgroundColor: '#171718',
+      }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
