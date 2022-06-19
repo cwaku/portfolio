@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/navbar/Navbar';
-import './App.css';
+import './stylesheets/App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
