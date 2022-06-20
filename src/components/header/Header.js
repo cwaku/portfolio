@@ -2,7 +2,6 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 import '../../stylesheets/header.css';
 
-
 const Header = () => (
   <>
     <div className="header">
@@ -25,9 +24,10 @@ const Header = () => (
             multiText={[
               'Software Engineer',
               'Front-end Developer',
-              'Full Stack Developer',
+              'Full-stack Developer',
             ]}
             multiTextDelay={1000}
+            multiTextLoop
             typeSpeed={30}
           />
         </h3>
