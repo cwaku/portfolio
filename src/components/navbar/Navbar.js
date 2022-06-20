@@ -16,10 +16,10 @@ import { Link } from 'react-router-dom';
 
 // Returns a list of pages.
 const pages = [
-  {title: 'Home', appBarSx: {display: { xs:"none", md: "block" }}},
-  {title: 'About', appBarSx: {display: { xs:"none", md: "block" }}},
-  {title: 'Projects', appBarSx: {display: { xs:"block" }}},
-  {title: 'Contact', appBarSx: {display: { xs:"none", md: "block" }}},
+  { title: 'Home', appBarSx: { display: { xs: 'none', md: 'block' } } },
+  { title: 'About', appBarSx: { display: { xs: 'none', md: 'block' } } },
+  { title: 'Projects', appBarSx: { display: { xs: 'block' } } },
+  { title: 'Contact', appBarSx: { display: { xs: 'none', md: 'block' } } },
 ];
 
 // Hide On Scroll
@@ -53,90 +53,96 @@ const Navbar = (props) => {
 
   return (
     <HideOnScroll {...props}>
-    <AppBar>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              marginLeft: { xs: "0", md: "50px" },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            RM
-          </Typography>
-          <Box sx={{ flexGrow: 0.1, display: { xs: 'flex' } }}>
-            {pages.map((page) => {
-              const sx = {
-                ...{ my: 2, color: 'white', display: 'block' },
-                ...page.appBarSx,
-              }
-
-              return <Button
-                key={page.title}
-                onClick={handleCloseNavMenu}
-                sx={sx}
-              >
-                <Link style={{textDecoration: "none", color: "white"}} to={`/${page.title.toLowerCase()}`}>
-                  {page.title}
-                </Link>
-              </Button>
-            })}
-          </Box>
-
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+      <AppBar
+        sx={{
+          backgroundColor: '#171718',
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="/"
               sx={{
-                display: { xs: 'block', md: 'none' },
+                mr: 2,
+                marginLeft: { xs: '0', md: '50px' },
+                flexGrow: 1,
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'inherit',
+                textDecoration: 'none',
               }}
             >
-              {/* Adds a menu item to the navigation menu. */}
-              {pages.map((page) => (
-                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
-                    <Link style={{textDecoration: "none", color: "white"}} to={`/${page.title.toLowerCase()}`}>{page.title}</Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+              RM
+            </Typography>
+            <Box sx={{ flexGrow: 0.1, display: { xs: 'flex' } }}>
+              {pages.map((page) => {
+                const sx = {
+                  ...{ my: 2, color: 'white', display: 'block' },
+                  ...page.appBarSx,
+                };
+
+                return (
+                  <Button
+                    key={page.title}
+                    onClick={handleCloseNavMenu}
+                    sx={sx}
+                  >
+                    <Link style={{ textDecoration: 'none', color: 'white' }} to={`/${page.title.toLowerCase()}`}>
+                      {page.title}
+                    </Link>
+                  </Button>
+                );
+              })}
+            </Box>
+
+            <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: 'block', md: 'none' },
+                }}
+              >
+                {/* Adds a menu item to the navigation menu. */}
+                {pages.map((page) => (
+                  <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">
+                      <Link style={{ textDecoration: 'none', color: 'white' }} to={`/${page.title.toLowerCase()}`}>{page.title}</Link>
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
     </HideOnScroll>
   );
-}
+};
 
 export default Navbar;

@@ -5,4 +5,10 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #171718;
+  color: #fff;
+}
+
+.scroll-container {
+  margin-top: 150px
 }
