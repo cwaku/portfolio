@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import '../../stylesheets/customCursor.css';
@@ -8,7 +8,6 @@ const CustomCursor = () => {
     { x: 0, y: 0 },
   );
 
-  console.log(mousePosition);
   const cursorVariants = {
     default: {
       x: mousePosition.x,
@@ -24,14 +23,9 @@ const CustomCursor = () => {
       });
     };
 
-    const handleMouseMovee = (e) => {
-      console.log(e);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("scroll", handleMouseMovee);
+    window.addEventListener('mousemove', handleMouseMove);
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
   return (
