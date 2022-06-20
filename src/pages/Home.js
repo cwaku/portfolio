@@ -1,10 +1,10 @@
 import Header from '../components/header/Header';
 import AboutMe from '../components/about/About';
 
-const Home = ({ ChangeCursorVariant }) => (
+const Home = () => (
   <div>
-    <Header ChangeCursorVariant={ChangeCursorVariant} />
-    <AboutMe ChangeCursorVariant={ChangeCursorVariant} />
+    <Header />
+    <AboutMe />
   </div>
 );
 
