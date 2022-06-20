@@ -1,8 +1,9 @@
 .cursor {
-  background-color: #5c62ec;
-  height: 32px;
-  width: 32px;
+  background-color: transparent;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
+  border: 1px solid #5c62ec;
   position: fixed;
   top: 0;
   left: 0;
