@@ -1,12 +1,15 @@
 import '../../stylesheets/header.css';
+
 const Header = () => (
   <>
     <div className="header">
       <div className="header-content">
-        <div className="header-content-name">
-          <h1>Ricky Mormor</h1>
-          <h2>Full Stack Developer</h2>
-        </div>
+        <h3 className="header-content-name">
+          Ricky
+          <span> Mormor.</span>
+          <br />
+          Software Engineer
+        </h3>
         <div className="header-content-summary">
           <p>
             You have a project you need coded?
@@ -15,10 +18,10 @@ const Header = () => (
           </p>
         </div>
         <div className="header-content-details-contact">
-          <button type="button" className="header-content-details-contact-button">
+          <button type="button" className="header-button-see-projects">
             See Projects
           </button>
-          <button type="button" className="header-content-details-contact-button">
+          <button type="button" className="header-button-cv">
             Download CV
           </button>
         </div>
