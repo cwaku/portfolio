@@ -24,6 +24,7 @@ const Header = () => (
               'Software Engineer',
               'Front-end Developer',
               'Full-stack Developer',
+              'Mentor',
             ]}
             multiTextDelay={3000}
             multiTextLoop

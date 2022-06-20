@@ -6,8 +6,8 @@
   gap: 24px;
   margin: auto 10px;
   height: 993px;
-  background: #1C1E22;
-  border: 1.5px solid #26292D;
+  background: #1c1e22;
+  border: 1.5px solid #26292d;
   border-radius: 8px;
   flex: none;
   order: 0;
@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   flex: none;
   order: 1;
@@ -26,31 +26,24 @@
 }
 
 .about-me__container__text__description {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-/* or 175% */
-
-letter-spacing: 0.44px;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.44px;
+  color: #fff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
-
 
 .about-me__container__image {
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+
 .about-me__container__image__image {
   height: 365px;
 }

@@ -8,7 +8,7 @@ const AboutMe = () => (
           I am a full stack web developer with a passion for creating
           beautiful and functional websites. I have a background in
           computer science and a passion for learning new things. I am
-          currently working as a software engineer at
+          currently working as a technical support engineer at
           {' '}
           <a
             href="https://www.linkedin.com/school/microverseinc/mycompany/"
