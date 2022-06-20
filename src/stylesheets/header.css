@@ -84,7 +84,8 @@
   color: #fff;
 }
 
-.header-button-cv {
+.header-button-cv,
+.about-me__container__text__button {
   display: flex;
   flex-direction: row;
   justify-content: center;
