@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/navbar/Navbar';
 import './stylesheets/App.css';
@@ -13,6 +13,11 @@ function App() {
   const app = useRef(null);
   const scrollContainer = useRef(null);
   const size = useWindowSize();
+
+  const [cursorVariant, setCursorVariant] = useState('default');
+  const ChangeCursorVariant = (variant) => {
+    setCursorVariant(variant);
+  };
 
   const skewConfig = {
     ease: 0.1,
@@ -48,11 +53,11 @@ function App() {
   return (
     <div ref={app} className="App">
       <Navbar />
-      <CustomCursor />
+      <CustomCursor setCursorVariant={cursorVariant} />
       <div ref={scrollContainer} className="scroll-container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home ChangeCursorVariant={ChangeCursorVariant} />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />

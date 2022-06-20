@@ -2,11 +2,11 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 import '../../stylesheets/header.css';
 
-const Header = () => (
+const Header = ({ ChangeCursorVariant }) => (
   <>
     <div className="header">
       <div className="header-content">
-        <h3 className="header-content-name">
+        <h3 onMouseEnter={ChangeCursorVariant('hover')} onMouseLeave={ChangeCursorVariant('default')} className="header-content-name">
           Ricky
           <span> Mormor.</span>
           <br />
