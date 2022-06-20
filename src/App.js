@@ -48,8 +48,8 @@ function App() {
   return (
     <div ref={app} className="App">
       <Navbar />
+      <CustomCursor />
       <div ref={scrollContainer} className="scroll-container">
-        <CustomCursor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
