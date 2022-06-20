@@ -18,17 +18,16 @@ const Header = () => (
               fontSize: '34px',
             }}
             startDelay={2000}
-            pauseDelay={1000}
-            loopDelay={1000}
+            pauseDelay={3000}
             cursorColor="#3F3D56"
             multiText={[
               'Software Engineer',
               'Front-end Developer',
               'Full-stack Developer',
             ]}
-            multiTextDelay={1000}
+            multiTextDelay={3000}
             multiTextLoop
-            typeSpeed={30}
+            typeSpeed={100}
           />
         </h3>
         <div className="header-content-summary">
