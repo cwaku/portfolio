@@ -11,7 +11,7 @@ const AboutMe = () => (
           currently working as a software engineer at
           {' '}
           <a
-            href="https://www.linkedin.com/in/joshua-m-barnett-b8a8b8a4/"
+            href="https://www.linkedin.com/school/microverseinc/mycompany/"
             target="_blank"
             rel="noopener noreferrer"
           >
