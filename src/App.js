@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import CustomCursor from './components/customCursor/CustomCursor';
 import useWindowSize from './hooks/useWindowSize';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
     <div ref={app} className="App">
       <Navbar />
       <div ref={scrollContainer} className="scroll-container">
+        <CustomCursor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

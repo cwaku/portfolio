@@ -1,0 +1,9 @@
+.cursor {
+  background-color: #5c62ec;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
