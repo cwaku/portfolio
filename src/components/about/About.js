@@ -1,4 +1,5 @@
 import '../../stylesheets/AboutMe.css';
+
 const AboutMe = () => (
   <div className="about-me">
     <div className="about-me__container">
