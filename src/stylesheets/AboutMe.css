@@ -1,10 +1,12 @@
 .about-me__container {
   display: flex;
   flex-direction: column;
+
   /* align-items: flex-start; */
   padding: 16px;
   gap: 24px;
   margin: auto 10px;
+
   /* height: 993px; */
   height: 650px;
   background: #1c1e22;

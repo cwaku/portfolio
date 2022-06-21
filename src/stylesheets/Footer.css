@@ -1,13 +1,15 @@
 .footer {
   display: flex;
   flex-direction: column;
+
   /* align-items: flex-start; */
-  padding: 0px 16px 32px;
+  padding: 0 16px 32px;
   gap: 48px;
   flex: none;
   order: 0;
   flex-grow: 0;
   height: 500px;
+
   /* justify-content: ; */
 }
 
@@ -21,12 +23,12 @@
 }
 
 .footer__container__left a {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -35,18 +37,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
-.footer__container__social{
+.footer__container__social {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
   flex: none;
   order: 3;
@@ -57,7 +59,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   flex: none;
   order: 1;
@@ -66,19 +68,19 @@
 
 ul {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__container__second,
 .social__links {
   font-family: 'DM Sans', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0.25px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #fff;
 }
 
 .social__links a {
@@ -92,7 +94,7 @@ color: #FFFFFF;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   flex: none;
   order: 1;
