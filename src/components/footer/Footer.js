@@ -19,10 +19,10 @@ const Footer = () => (
       <div className="footer__container__social">
         <p>Social</p>
         <ul className="social__links">
-          <li><FaLinkedin /></li>
-          <li><FaGithub /></li>
-          <li><FaTwitter /></li>
-          <li><FaInstagram /></li>
+          <li><a href="https://www.linkedin.com/in/rickymormor/" aria-label="LinkedIn logo"><FaLinkedin /></a></li>
+          <li><a href="https://github.com/cwaku" aria-label="Github logo"><FaGithub /></a></li>
+          <li><a href="https://twitter.com/rickymormor" aria-label="Twitter logo"><FaTwitter /></a></li>
+          <li><a href="/" aria-label="Instagram logo"><FaInstagram /></a></li>
         </ul>
       </div>
     </div>

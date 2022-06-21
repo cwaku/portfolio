@@ -70,6 +70,22 @@ ul {
   margin: 0px;
 }
 
+.footer__container__second,
+.social__links {
+  font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.25px;
+color: #FFFFFF;
+}
+
+.social__links a {
+  color: inherit;
+  font-size: 35px;
+}
+
 .footer__container__copyright {
   display: flex;
   flex-direction: column;
