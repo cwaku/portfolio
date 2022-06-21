@@ -13,8 +13,8 @@ import CustomCursor from './components/customCursor/CustomCursor';
 import useWindowSize from './hooks/useWindowSize';
 
 function App() {
-  const app = useRef(null);
-  const scrollContainer = useRef(null);
+  const app = useRef();
+  const scrollContainer = useRef();
   const size = useWindowSize();
 
   const skewConfig = {

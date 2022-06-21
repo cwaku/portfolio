@@ -8,9 +8,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer__container">
       <div className="footer__container__left">
-        <div className="footer__container__left__logo">
-          <a href="/">RM</a>
-        </div>
+        <a href="/">RM</a>
       </div>
       <ul className="footer__container__second">
         <li>Home</li>
@@ -29,7 +27,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__container__copyright">
-      <p>© 2022 Ricky Mormor. All rights reserved.</p>
+      <p>© 2022 Ricky Mormor.</p>
     </div>
   </footer>
 );
