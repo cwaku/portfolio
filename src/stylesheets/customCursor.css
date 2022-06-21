@@ -1,12 +1,22 @@
 .cursor {
-  background-color: transparent;
-  height: 52px;
-  width: 52px;
-  border-radius: 50%;
-  border: 1px solid #5c62ec;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  pointer-events: none;
+  display: none;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+  .cursor {
+    display: block;
+    background-color: transparent;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    border: 1px solid #5c62ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.91s;
+  }
 }
