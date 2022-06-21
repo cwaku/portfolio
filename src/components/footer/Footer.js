@@ -22,7 +22,7 @@ const Footer = () => (
           <li><a href="https://www.linkedin.com/in/rickymormor/" aria-label="LinkedIn logo"><FaLinkedin /></a></li>
           <li><a href="https://github.com/cwaku" aria-label="Github logo"><FaGithub /></a></li>
           <li><a href="https://twitter.com/rickymormor" aria-label="Twitter logo"><FaTwitter /></a></li>
-          <li><a href="/" aria-label="Instagram logo"><FaInstagram /></a></li>
+          <li><a href="https://instagram.com/rickymormor" aria-label="Instagram logo"><FaInstagram /></a></li>
         </ul>
       </div>
     </div>
