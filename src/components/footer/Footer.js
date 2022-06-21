@@ -1,3 +1,7 @@
+import {
+  FaLinkedin, FaGithub, FaTwitter, FaInstagram,
+} from 'react-icons/fa';
+
 import '../../stylesheets/Footer.css';
 
 const Footer = () => (
@@ -17,10 +21,10 @@ const Footer = () => (
       <div className="footer__container__social">
         <p>Social</p>
         <ul className="social__links">
-          <li>LinkedIn</li>
-          <li>Github</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
+          <li><FaLinkedin /></li>
+          <li><FaGithub /></li>
+          <li><FaTwitter /></li>
+          <li><FaInstagram /></li>
         </ul>
       </div>
     </div>

@@ -16,6 +16,7 @@
   align-items: center;
   padding: 0px;
   gap: 32px;
+  width: 100%;
 }
 
 .footer__container__second {
@@ -50,4 +51,10 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
