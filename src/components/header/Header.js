@@ -28,7 +28,7 @@ const Header = () => (
             ]}
             multiTextDelay={3000}
             multiTextLoop
-            typeSpeed={100}
+            typeSpeed={200}
           />
         </h3>
         <div className="header-content-summary">
