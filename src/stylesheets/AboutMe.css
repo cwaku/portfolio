@@ -5,7 +5,7 @@
   padding: 16px;
   gap: 24px;
   margin: auto 10px;
-  height: 993px;
+  /* height: 993px; */
   background: #1c1e22;
   border: 1.5px solid #26292d;
   border-radius: 8px;
@@ -25,6 +25,10 @@
   flex-grow: 0;
 }
 
+.about-me__container__text h1 {
+  margin: 0;
+}
+
 .about-me__container__text__description {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
@@ -36,6 +40,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin: 0;
 }
 
 .about-me__container__image {
