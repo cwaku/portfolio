@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -10,5 +11,6 @@
 }
 
 .scroll-container {
-  margin-top: 150px;
+  /* margin-top: 150px; */
+  padding: 150px 0 0 0;
 }
