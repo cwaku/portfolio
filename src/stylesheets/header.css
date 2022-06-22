@@ -80,6 +80,12 @@
   font-size: 16px;
   line-height: 16px;
   color: #fff;
+  transition: background-color 1s cubic-bezier(0.11, 0, 0.5, 0) 0s;
+}
+
+.header-button-see-projects:hover {
+  background: #fff;
+  color: #5c62ec;
 }
 
 .header-button-cv,
@@ -103,4 +109,12 @@
   line-height: 16px;
   background-color: transparent;
   color: #fff;
+  transition: background-color 1s cubic-bezier(0.11, 0, 0.5, 0) 0s;
+}
+
+.header-button-cv:hover,
+.about-me__container__text__button:hover {
+  background-color: #fff;
+  color: #5c62ec;
+  border: 1px solid #5c62ec;
 }
