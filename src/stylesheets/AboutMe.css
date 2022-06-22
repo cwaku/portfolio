@@ -1,13 +1,9 @@
 .about-me__container {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding: 16px;
   gap: 24px;
   margin: auto 10px;
-
-  /* height: 993px; */
   height: 650px;
   background: #1c1e22;
   border: 1.5px solid #26292d;
@@ -87,7 +83,6 @@
     gap: 24px;
     width: 560px;
     justify-content: center;
-    /* height: 404.95px; */
   }
 
   .about-me__container__image__image {
