@@ -28,6 +28,7 @@
   line-height: 32px;
   color: #fff;
   text-decoration: none;
+  box-shadow: -1px -1px 16px 4px rgb(0 0 0 / 25%);
 }
 
 .footer__container__second {
@@ -90,6 +91,10 @@ ul {
 .social__links a {
   color: inherit;
   font-size: 35px;
+}
+
+.social__logo {
+  box-shadow: -1px -1px 16px 4px rgb(0 0 0 / 25%);
 }
 
 .footer__container__copyright {
