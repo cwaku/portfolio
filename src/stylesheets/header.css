@@ -12,7 +12,8 @@
   align-items: center;
 }
 
-.header-content-name {
+.header-content-name,
+.react-typewriter-text {
   font-size: 34px;
   line-height: 50px;
   margin: 0;
@@ -121,7 +122,8 @@
 
 /* Desktop version */
 @media (min-width: 768px) {
-  .header-content-name {
+  .header-content-name,
+  .react-typewriter-text {
     font-weight: 700;
     font-size: 60px;
     line-height: 71px;
