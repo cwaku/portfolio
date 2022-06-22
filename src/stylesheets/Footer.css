@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 0 16px 32px;
-
-  /* gap: 48px; */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -111,21 +109,13 @@ ul {
 @media (min-width: 768px) {
   .footer {
     height: 301px;
-
-    /* width: 1440px; */
     padding: 64px 100px 0;
-
-    /* gap: 64px; */
   }
 
   .footer__container {
     gap: 129px;
     flex-direction: row;
     align-items: flex-start;
-
-    /* width: 737.46px; */
-
-    /* height: 108px; */
   }
 
   .footer__container__second,
