@@ -1,13 +1,9 @@
 .about-me__container {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding: 16px;
   gap: 24px;
   margin: auto 10px;
-
-  /* height: 993px; */
   height: 650px;
   background: #1c1e22;
   border: 1.5px solid #26292d;
@@ -28,8 +24,13 @@
   flex-grow: 0;
 }
 
-.about-me__container__text h1 {
+.about-me__container__text__title {
   margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .about-me__container__text__description {
@@ -58,4 +59,38 @@
 
 .about-me__container__image__image {
   width: 294px;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 237px 128px;
+  }
+
+  .about-me__container {
+    flex-direction: row;
+    gap: 32px;
+    padding: 24px;
+    height: 453.16px;
+  }
+
+  .about-me__container__text {
+    gap: 24px;
+    width: 560px;
+    justify-content: center;
+  }
+
+  .about-me__container__image__image {
+    width: 326.33px;
+  }
+
+  .about-me__container__text__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+  }
 }

@@ -1,8 +1,6 @@
 .header {
   width: 100%;
   height: 492px;
-
-  /* padding-bottom: 150px; */
 }
 
 .header-content {
@@ -12,7 +10,8 @@
   align-items: center;
 }
 
-.header-content-name {
+.header-content-name,
+.react-typewriter-text {
   font-size: 34px;
   line-height: 50px;
   margin: 0;
@@ -117,4 +116,25 @@
   background-color: #fff;
   color: #5c62ec;
   border: 1px solid #5c62ec;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .header-content-name,
+  .react-typewriter-text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+  }
+
+  .header-content-summary p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-content-details-contact {
+    flex-direction: row;
+    gap: 24px;
+  }
 }

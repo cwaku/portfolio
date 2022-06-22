@@ -14,7 +14,10 @@ const Footer = () => (
         <li>Home</li>
         <li>About me</li>
         <li>Projects</li>
+      </ul>
+      <ul className="footer__container__second">
         <li>Contact me</li>
+        <li>Mail</li>
       </ul>
       <div className="footer__container__social">
         <p>Social</p>
