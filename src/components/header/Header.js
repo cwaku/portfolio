@@ -11,12 +11,6 @@ const Header = () => (
           <span> Mormor.</span>
           <br />
           <TypeWriterEffect
-            textStyle={{
-              fontFamily: 'DM Sans',
-              color: '#fafafa',
-              fontWeight: 500,
-              fontSize: '34px',
-            }}
             startDelay={2000}
             pauseDelay={3000}
             cursorColor="#3F3D56"
