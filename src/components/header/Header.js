@@ -14,8 +14,9 @@ const Header = () => (
             textStyle={{
               fontFamily: 'DM Sans',
               color: '#fafafa',
-              fontWeight: 500,
-              fontSize: '34px',
+              fontWeight: 700,
+              fontSize: '60px',
+              letterSpacing: '-0.5px',
             }}
             startDelay={2000}
             pauseDelay={3000}

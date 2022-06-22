@@ -118,3 +118,23 @@
   color: #5c62ec;
   border: 1px solid #5c62ec;
 }
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .header-content-name {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+  }
+
+.header-content-summary p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-content-details-contact {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
