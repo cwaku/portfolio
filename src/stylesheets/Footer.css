@@ -118,12 +118,35 @@ ul {
   .footer__container {
     gap: 129px;
     flex-direction: row;
+    align-items: flex-start;
     /* width: 737.46px; */
-    height: 108px;
+    /* height: 108px; */
+  }
+
+  .footer__container__second,
+  .footer__container__social {
+    align-items: flex-start;
+    }
+
+  .social__links a {
+    font-size: 33px;
   }
 
   .footer__container__copyright {
     align-items: flex-start;
+  }
+
+  .footer__container__copyright p {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
 }
 
