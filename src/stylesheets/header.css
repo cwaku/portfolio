@@ -79,11 +79,13 @@
   font-size: 16px;
   line-height: 16px;
   color: #fff;
+  border: 1px solid #5c62ec;
   transition: background-color 1s cubic-bezier(0.11, 0, 0.5, 0) 0s;
+  box-shadow: 5px 8px 14px 13px rgb(0 0 0 / 25%);
 }
 
 .header-button-see-projects:hover {
-  background: #fff;
+  background: #fafafa;
   color: #5c62ec;
 }
 
@@ -107,8 +109,9 @@
   font-size: 16px;
   line-height: 16px;
   background-color: transparent;
-  color: #fff;
+  color: #fafafa;
   transition: background-color 1s cubic-bezier(0.11, 0, 0.5, 0) 0s;
+  box-shadow: 5px 8px 14px 13px rgb(0 0 0 / 25%);
 }
 
 .header-button-cv:hover,
