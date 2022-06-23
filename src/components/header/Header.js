@@ -18,6 +18,7 @@ const Header = () => (
               'Software Engineer',
               'Front-end Developer',
               'Full-stack Developer',
+              'Entrepreneur',
               'Mentor',
             ]}
             multiTextDelay={3000}
