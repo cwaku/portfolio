@@ -131,3 +131,30 @@ flex: none;
 order: 3;
 flex-grow: 0;
 }
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .contact-container {
+    padding: 64px 397px 128px;
+    gap: 44px;
+    /* width: 1440px; */
+  }
+
+  .contact-content {
+    width: 648px;
+  }
+
+  .contact-content__title {
+    font-weight: 700;
+font-size: 60px;
+line-height: 71px;
+letter-spacing: -0.5px;
+  }
+
+  .contact-content__description {
+    font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.15px;
+width: 648px;
+  }
+}
