@@ -106,6 +106,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 height: 40px;
+color: #FFFFFF;
 }
 
 .form__textarea {
