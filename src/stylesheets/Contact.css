@@ -113,6 +113,35 @@ color: #FFFFFF;
   height: 150px;
 }
 
+.contact-form__success {
+  color: #35b362;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  flex: none;
+  margin: 0;
+  order: 3;
+  flex-grow: 0;
+text-align: center;
+}
+
+.contact-form__error {
+  color: #FF0000;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+text-align: center;
+}
+
 .contact-from__submit {
   display: flex;
 flex-direction: row;
