@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Partytown debug forward={['dataLayer.push']} />
+      <Partytown debug={false} forward={['dataLayer.push']} />
       <App />
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,7 +1,5 @@
 import { useRef, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router';
-// import { Partytown } from '@builder.io/partytown/react';
-// import ReactGa from 'react-ga';
 
 import './stylesheets/App.css';
 import Navbar from './components/navbar/Navbar';
@@ -30,11 +28,6 @@ function App() {
   useEffect(() => {
     document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
   }, [size.height, location.pathname]);
-
-  // useEffect(() => {
-  //   ReactGa.initialize('G-JGN3CLTZZH');
-  //   ReactGa.pageview(location.pathname);
-  // }, [location.pathname]);
 
   const skewScroll = () => {
     skewConfig.current = window.scrollY;
