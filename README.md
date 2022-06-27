@@ -2,7 +2,7 @@
 # MY PERSONAL PORTFOLIO
 
 
-![screenshot]()
+![screenshot](./src/assets/images/CPT2206261137-764x351.gif)
 
 ## Built With
 
