@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@builder.io/partytown": "^0.6.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@formspree/react": "^2.2.5",
@@ -26,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "partytown": "partytown copylib public/~partytown",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

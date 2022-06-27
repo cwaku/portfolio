@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router';
+import { Partytown } from '@builder.io/partytown/react';
 
 import './stylesheets/App.css';
 import Navbar from './components/navbar/Navbar';
