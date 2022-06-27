@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* Partytown 0.6.2 - MIT builder.io */
 !function(win, doc, nav, top, useAtomics, config, libPath, timeout, scripts, sandbox, mainForwardFn, isReady) {
     function ready() {
