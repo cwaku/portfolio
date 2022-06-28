@@ -1,7 +1,8 @@
 .header {
   width: 100%;
-  height: 492px;
-  padding-top: 115px;
+  height: 625px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .header-content {
@@ -9,6 +10,15 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 120px;
+  width: 100%;
+}
+
+.header-content-details-contact-link a {
+  pointer-events: all;
+  color: white;
+  text-decoration: none;
 }
 
 .header-content-name,
@@ -124,6 +134,19 @@
 
 /* Desktop version */
 @media (min-width: 768px) {
+  .header {
+    height: 555px;
+    position: relative;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+  }
+
   .header-content-name,
   .react-typewriter-text {
     font-weight: 700;
