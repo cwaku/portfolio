@@ -1,7 +1,9 @@
 import TypeWriterEffect from 'react-typewriter-effect';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Logo } from '@pmndrs/branding';
+import {
+  FaLinkedin, FaGithub, FaTwitter, FaInstagram,
+} from 'react-icons/fa';
 import { Bg, Rig, Caption } from '../../pages/About';
 import Noodles from '../animations/Noodles';
 
@@ -13,16 +15,17 @@ function Overlay() {
       position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '100%',
     }}
     >
-      <a
-        href="https://pmnd.rs/"
+      <ul
+        className="social__links header-content-details-contact-link"
         style={{
-          position: 'absolute', bottom: 40, left: 90, fontSize: '13px',
+          position: 'absolute', bottom: 40, left: 40, fontSize: '13px',
         }}
       >
-        pmnd.rs
-        <br />
-        dev collective
-      </a>
+        <li><a href="https://www.linkedin.com/in/rickymormor/" aria-label="LinkedIn logo" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
+        <li><a href="https://github.com/cwaku" aria-label="Github logo" target="_blank" rel="noreferrer"><FaGithub /></a></li>
+        <li><a href="https://twitter.com/rickymormor" aria-label="Twitter logo" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+        <li><a href="https://instagram.com/rickymormor" aria-label="Instagram logo" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+      </ul>
       <div style={{
         position: 'absolute', top: 40, left: 40, fontSize: '13px',
       }}
@@ -89,10 +92,6 @@ const Header = () => (
         </div>
       </div>
       <Overlay />
-      <Logo style={{
-        position: 'absolute', bottom: 40, left: 40, width: 30,
-      }}
-      />
     </div>
   </>
 );
