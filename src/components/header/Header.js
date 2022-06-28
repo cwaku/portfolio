@@ -8,6 +8,7 @@ import { Bg, Rig, Caption } from '../../pages/About';
 import Noodles from '../animations/Noodles';
 
 import '../../stylesheets/header.css';
+import ScrollAnimation from '../animations/Scroll';
 
 function Overlay() {
   return (
@@ -18,7 +19,7 @@ function Overlay() {
       <ul
         className="social__links header-content-details-contact-link"
         style={{
-          position: 'absolute', bottom: 40, left: 40, fontSize: '13px',
+          position: 'absolute', bottom: 30, left: 40, fontSize: '13px',
         }}
       >
         <li><a href="https://www.linkedin.com/in/rickymormor/" aria-label="LinkedIn logo" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
@@ -36,8 +37,13 @@ function Overlay() {
         position: 'absolute', bottom: 40, right: 40, fontSize: '13px',
       }}
       >
-        07/02/2022
+        good —
       </div>
+      <ScrollAnimation
+        style={{
+          position: 'absolute', bottom: 40, right: 40, fontSize: '13px',
+        }}
+      />
     </div>
   );
 }
