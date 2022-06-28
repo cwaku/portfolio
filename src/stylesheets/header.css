@@ -124,6 +124,19 @@
 
 /* Desktop version */
 @media (min-width: 768px) {
+  .header {
+    height: 555px;
+    position: relative;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+  }
+
   .header-content-name,
   .react-typewriter-text {
     font-weight: 700;

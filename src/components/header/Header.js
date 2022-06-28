@@ -1,14 +1,59 @@
 import TypeWriterEffect from 'react-typewriter-effect';
+import { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Logo } from '@pmndrs/branding';
+import { Bg, Rig, Caption } from '../../pages/About';
+import Noodles from '../animations/Noodles';
 
 import '../../stylesheets/header.css';
+
+function Overlay() {
+  return (
+    <div style={{
+      position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '100%',
+    }}
+    >
+      <a
+        href="https://pmnd.rs/"
+        style={{
+          position: 'absolute', bottom: 40, left: 90, fontSize: '13px',
+        }}
+      >
+        pmnd.rs
+        <br />
+        dev collective
+      </a>
+      <div style={{
+        position: 'absolute', top: 40, left: 40, fontSize: '13px',
+      }}
+      >
+        bad —
+      </div>
+      <div style={{
+        position: 'absolute', bottom: 40, right: 40, fontSize: '13px',
+      }}
+      >
+        07/02/2022
+      </div>
+    </div>
+  );
+}
 
 const Header = () => (
   <>
     <div className="header">
+      <Canvas className="Canvass" dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
+        <Bg />
+        <Suspense fallback={null}>
+          <Noodles />
+          <Caption>Ricky Mormor</Caption>
+          <Rig />
+        </Suspense>
+      </Canvas>
       <div className="header-content">
         <h3 className="header-content-name">
-          Ricky
-          <span> Mormor.</span>
+          {/* Ricky
+          <span> Mormor.</span> */}
           <br />
           <TypeWriterEffect
             startDelay={2000}
@@ -43,6 +88,11 @@ const Header = () => (
           </button>
         </div>
       </div>
+      <Overlay />
+      <Logo style={{
+        position: 'absolute', bottom: 40, left: 40, width: 30,
+      }}
+      />
     </div>
   </>
 );

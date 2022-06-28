@@ -1,10 +1,10 @@
-/* eslint-disable */
-import * as THREE from 'three'
-import { Suspense } from 'react'
-import { Canvas, useThree, useFrame } from '@react-three/fiber'
-import { Text } from '@react-three/drei'
-import { LayerMaterial, Depth, Noise } from 'lamina'
-import Noodles from '../components/animations/Noodles'
+// /* eslint-disable */
+import * as THREE from 'three';
+import { Suspense } from 'react';
+import { Canvas, useThree, useFrame } from '@react-three/fiber';
+import { Text } from '@react-three/drei';
+import { LayerMaterial, Depth, Noise } from 'lamina';
+import Noodles from '../components/animations/Noodles';
 
 export default function App() {
   return (
@@ -12,36 +12,37 @@ export default function App() {
       <Bg />
       <Suspense fallback={null}>
         <Noodles />
-        <Caption>{`THE\nSEVENTY-TWO\nNAMES\nOF GOD.`}</Caption>
+        <Caption>{'THE\nSEVENTY-TWO\nNAMES\nOF GOD.'}</Caption>
         <Rig />
       </Suspense>
     </Canvas>
-  )
+  );
 }
 
-function Caption({ children }) {
-  const { width } = useThree((state) => state.viewport)
+export function Caption({ children }) {
+  const { width } = useThree((state) => state.viewport);
   return (
     <Text
-      position={[0, 0, -5]}
+      position={[0, 1.5, -5]}
       lineHeight={0.8}
-      font="/Ki-Medium.ttf"
+      font="DM Sans"
       fontSize={width / 8}
       material-toneMapped={false}
       anchorX="center"
-      anchorY="middle">
+      anchorY="middle"
+    >
       {children}
     </Text>
-  )
+  );
 }
 
-function Rig({ v = new THREE.Vector3() }) {
+export function Rig({ v = new THREE.Vector3() }) {
   return useFrame((state) => {
-    state.camera.position.lerp(v.set(state.mouse.x / 2, state.mouse.y / 2, 10), 0.05)
-  })
+    state.camera.position.lerp(v.set(state.mouse.x / 2, state.mouse.y / 2, 10), 0.05);
+  });
 }
 
-function Bg() {
+export function Bg() {
   return (
     <mesh scale={100}>
       <boxGeometry args={[1, 1, 1]} />
@@ -50,5 +51,5 @@ function Bg() {
         <Noise mapping="local" type="white" scale={1000} colorA="white" colorB="black" mode="subtract" alpha={0.2} />
       </LayerMaterial>
     </mesh>
-  )
+  );
 }
