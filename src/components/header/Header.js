@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import {
   FaLinkedin, FaGithub, FaTwitter, FaInstagram,
 } from 'react-icons/fa';
-import { Bg, Rig, Caption } from '../../pages/About';
+import { Rig, Bg, Caption } from '../animations/NoodlesUtils';
 import Noodles from '../animations/Noodles';
 
 import '../../stylesheets/header.css';
