@@ -1,4 +1,4 @@
-// /* eslint-disable */
+/* eslint-disable react/prop-types */
 import * as THREE from 'three';
 import { Suspense } from 'react';
 import { Canvas, useThree, useFrame } from '@react-three/fiber';
