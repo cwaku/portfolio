@@ -25,8 +25,10 @@ const AboutMe = () => (
           </a>
           .
         </p>
-        <button type="button" className="about-me__container__text__button">
-          More about me
+        <button type="button" className="about-me__container__text__button header-button">
+          <a href="/about">
+            More about me
+          </a>
         </button>
       </div>
       <div className="about-me__container__image">
