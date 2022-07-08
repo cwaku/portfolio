@@ -73,6 +73,8 @@ const Header = () => (
               'Front-end Developer',
               'Full-stack Developer',
               'Back-end Developer',
+              'Technical Support Engineer',
+              'Blockchain Enthusiast',
               'Entrepreneur',
               'Mentor',
             ]}

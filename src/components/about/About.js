@@ -6,9 +6,14 @@ const AboutMe = () => (
       <div className="about-me__container__text">
         <h1 className="about-me__container__text__title">About Me</h1>
         <p className="about-me__container__text__description">
-          I am a full stack web developer with a passion for creating
-          beautiful and functional websites. I have a background in
-          computer science and a passion for learning new things. I am
+          A highly motivated Full-stack Engineer and Blockchain enthusiast
+          who likes to challenge himself with the latest trends.
+          I am looking for companies that value creativity, hard work, and leadership.
+          I am dedicated to creating and properly maintaining web apps with a passion
+          for creative solutions. While it all started as an interest in code, later on,
+          I found myself E-learning and studying by myself through online courses until
+          I enrolled in Microverse Program.
+          I am
           currently working as a technical support engineer at
           {' '}
           <a
