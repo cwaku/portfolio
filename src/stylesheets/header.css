@@ -79,11 +79,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px;
   gap: 10px;
   background: #5c62ec;
   border-radius: 5px;
-  width: 169px;
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -98,10 +96,17 @@
 .header-button a {
   color: #fff;
   text-decoration: none;
+  width: 100%;
+  padding: 16px 20px;
+  width: 169px;
 }
 
 .header-button-see-projects:hover {
   background: #fafafa;
+  color: #5c62ec;
+}
+
+.header-button a:hover {
   color: #5c62ec;
 }
 
@@ -111,14 +116,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px;
   gap: 8px;
   border: 1px solid #fff;
   border-radius: 5px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  width: 169px;
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
