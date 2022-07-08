@@ -101,11 +101,6 @@
   width: 169px;
 }
 
-.header-button-see-projects:hover {
-  background: #fafafa;
-  color: #5c62ec;
-}
-
 .header-button a:hover {
   color: #5c62ec;
 }
@@ -134,8 +129,9 @@
 }
 
 .header-button-cv:hover,
+.header-button-see-projects:hover,
 .about-me__container__text__button:hover {
-  background-color: #fff;
+  background-color: #fafafa;
   color: #5c62ec;
   border: 1px solid #5c62ec;
 }
