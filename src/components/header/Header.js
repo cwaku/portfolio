@@ -55,7 +55,7 @@ const Header = () => (
         <Bg />
         <Suspense fallback={null}>
           <Noodles />
-          <Caption>Ricky Mormor</Caption>
+          <Caption>Ricky Mormor.</Caption>
           <Rig />
         </Suspense>
       </Canvas>
@@ -89,11 +89,15 @@ const Header = () => (
           </p>
         </div>
         <div className="header-content-details-contact">
-          <button type="button" className="header-button-see-projects">
-            See Projects
+          <button type="button" className="header-button-see-projects header-button">
+            <a href="https://github.com/cwaku" target="_blank" rel="noreferrer">
+              See Projects
+            </a>
           </button>
-          <button type="button" className="header-button-cv">
-            Download CV
+          <button type="button" className="header-button-cv header-button">
+            <a href="https://docs.google.com/document/d/1WbBJTasEmBGsHS8DfCMaoht3Gh2oel7ijTDqKNaq1Ak/edit?usp=sharing" target="_blank" download rel="noreferrer">
+              Download CV
+            </a>
           </button>
         </div>
       </div>
