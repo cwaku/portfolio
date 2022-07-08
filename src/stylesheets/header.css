@@ -135,7 +135,6 @@
 /* Desktop version */
 @media (min-width: 768px) {
   .header {
-    height: 555px;
     position: relative;
     padding-top: 0;
     margin-bottom: 50px;

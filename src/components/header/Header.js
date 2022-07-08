@@ -31,7 +31,7 @@ function Overlay() {
         position: 'absolute', top: 40, left: 40, fontSize: '13px',
       }}
       >
-        bad —
+        welcome —
       </div>
       <div style={{
         position: 'absolute', bottom: 40, right: 40, fontSize: '13px',
