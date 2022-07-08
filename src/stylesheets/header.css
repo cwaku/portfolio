@@ -1,7 +1,8 @@
 .header {
   width: 100%;
-  height: 492px;
-  padding-top: 115px;
+  height: 625px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .header-content {
@@ -9,6 +10,15 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 120px;
+  width: 100%;
+}
+
+.header-content-details-contact-link a {
+  pointer-events: all;
+  color: white;
+  text-decoration: none;
 }
 
 .header-content-name,
@@ -69,11 +79,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px;
   gap: 10px;
+  width: 169px;
   background: #5c62ec;
   border-radius: 5px;
-  width: 169px;
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -85,8 +94,14 @@
   box-shadow: 5px 8px 14px 13px rgb(0 0 0 / 25%);
 }
 
-.header-button-see-projects:hover {
-  background: #fafafa;
+.header-button a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.header-button a:hover {
   color: #5c62ec;
 }
 
@@ -96,14 +111,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px;
   gap: 8px;
+  width: 169px;
   border: 1px solid #fff;
   border-radius: 5px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  width: 169px;
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -116,14 +130,27 @@
 }
 
 .header-button-cv:hover,
+.header-button-see-projects:hover,
 .about-me__container__text__button:hover {
-  background-color: #fff;
+  background-color: #fafafa;
   color: #5c62ec;
   border: 1px solid #5c62ec;
 }
 
 /* Desktop version */
 @media (min-width: 768px) {
+  .header {
+    position: relative;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+  }
+
   .header-content-name,
   .react-typewriter-text {
     font-weight: 700;

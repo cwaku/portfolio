@@ -3,18 +3,18 @@
   "name": "Ricky Mormor Portfolio",
   "icons": [
     {
-      "src": "favicn.ico",
+      "src": "",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo19.png",
+      "src": "",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo52.png",
-      "type": "image/png",
+      "src": "",
+      "type": "",
       "sizes": "512x512"
     }
   ],
