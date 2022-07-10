@@ -1,3 +1,5 @@
+import Skills from '../components/about/Skills';
+
 import '../stylesheets/AboutPage.css';
 
 const About = () => (
@@ -8,6 +10,8 @@ const About = () => (
         <p className="about__container__text__description">
           I&apos;m a Full-stack Engineer who presently lives in Accra,
           the capital and largest city of Ghana, on the Atlantic coast of West Africa.
+        </p>
+        <p className="about__container__text__description">
           I like the idea of working as a team and think it is a way to connect new skills,
           offer my knowledge to the team and improve productivity in developing a creative solution.
           I like to discover new things daily and be a valuable asset to teams I collaborate with,
@@ -31,6 +35,7 @@ const About = () => (
         />
       </div>
     </div>
+    <Skills />
   </div>
 );
 

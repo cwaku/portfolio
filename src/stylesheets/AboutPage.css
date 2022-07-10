@@ -4,7 +4,7 @@
   align-items: center;
   padding: 32px 16px 64px;
   gap: 24px;
-  height: 1326px;
+  /* height: 1326px; */
 }
 
 .about__container__text {
@@ -16,7 +16,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  height: 720px;
+  /* height: 720px; */
 }
 
 .about__container__text__title {
@@ -28,6 +28,7 @@
   text-align: center;
   letter-spacing: 0.25px;
   color: #fff;
+  margin: 0;
 }
 
 .about__container__text__description {
@@ -41,6 +42,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin: 0;
 }
 
 .about__container__image {
