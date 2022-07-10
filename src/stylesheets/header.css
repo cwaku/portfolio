@@ -1,8 +1,10 @@
 .header {
   width: 100%;
-  height: 625px;
+  height: calc(100vh - 69px);
   margin-bottom: 30px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .header-content {
@@ -11,8 +13,9 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 120px;
-  width: 100%;
+  top: 0;
+  height: 100%;
+  justify-content: center;
 }
 
 .header-content-details-contact-link a {
@@ -140,15 +143,13 @@
 /* Desktop version */
 @media (min-width: 768px) {
   .header {
-    position: relative;
     padding-top: 0;
     margin-bottom: 50px;
   }
 
   .header-content {
-    position: absolute;
     top: 140px;
-    width: 100%;
+    justify-content: start;
   }
 
   .header-content-name,
@@ -167,5 +168,18 @@
   .header-content-details-contact {
     flex-direction: row;
     gap: 24px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1367px) {
+  .header {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .header-content {
+    top: 0;
+    justify-content: center;
   }
 }
