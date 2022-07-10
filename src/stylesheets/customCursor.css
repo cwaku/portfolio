@@ -8,8 +8,8 @@
   .cursor {
     display: block;
     background-color: transparent;
-    height: 52px;
-    width: 52px;
+    height: 72px;
+    width: 72px;
     border-radius: 50%;
     border: 1px solid #5c62ec;
     position: fixed;

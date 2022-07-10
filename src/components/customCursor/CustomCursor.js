@@ -13,7 +13,8 @@ const CustomCursor = () => {
       x: mousePosition.x,
       y: mousePosition.y,
       backgroundColor: '#fafafabd',
-      mixBlendMode: 'overlay',
+      mixBlendMode: 'soft-light',
+      scale: 1,
     },
   };
 
