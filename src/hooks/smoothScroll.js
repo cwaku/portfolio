@@ -5,7 +5,7 @@ import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 const overscrollOptions = {
   enabled: true,
   effect: 'bounce',
-  damping: 0.10,
+  damping: 0.17,
   maxOverscroll: 150,
 };
 
@@ -20,9 +20,9 @@ const SmoothScroll = () => {
       },
     });
 
-    // return () => {
-    //   if (Scrollbar) Scrollbar.destroy(document.querySelector('.scroll-container'));
-    // };
+    return () => {
+      if (Scrollbar) Scrollbar.destroy(document.querySelector('.scroll-container'));
+    };
   },
   []);
 
