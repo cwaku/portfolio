@@ -30,7 +30,6 @@
   text-align: center;
   letter-spacing: 0.25px;
   color: #fff;
-  /* margin: 0; */
 }
 
 .about__container__text__description {
@@ -56,4 +55,33 @@
 
 .about__container__image__image {
   width: 100%;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 142px 128px;
+    gap: 140px;
+  }
+
+  .about__container__text {
+    width: 568px;
+  }
+
+  .about__container__image {
+    width: 448px;
+  }
+
+  .about__container__text__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
 }
