@@ -1,4 +1,3 @@
-// import { useRef, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 
 import './stylesheets/App.css';
@@ -10,14 +9,9 @@ import Contact from './pages/Contact';
 import Footer from './components/footer/Footer';
 
 import CustomCursor from './components/customCursor/CustomCursor';
-// import useWindowSize from './hooks/useWindowSize';
 import SmoothScroll from './hooks/smoothScroll';
 
 function App() {
-  // useEffect(() => {
-  //   document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
-  // }, [size.height]);
-
   return (
     <div className="App">
       <Navbar />

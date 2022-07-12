@@ -13,7 +13,7 @@ const SmoothScroll = () => {
   useEffect(() => {
     Scrollbar.use(OverscrollPlugin);
     Scrollbar.init(document.querySelector('.scroll-container'), {
-      damping: 0.07,
+      damping: 0.05,
       thumbMinSize: 10,
       plugins: {
         overscroll: { ...overscrollOptions },
