@@ -16,9 +16,7 @@ const SmoothScroll = () => {
       damping: 0.07,
       thumbMinSize: 10,
       plugins: {
-        overscroll: {
-          overscroll: { ...overscrollOptions },
-        },
+        overscroll: { ...overscrollOptions },
       },
     });
 

@@ -22,8 +22,8 @@ function App() {
     <div className="App">
       <Navbar />
       <CustomCursor />
+      <SmoothScroll />
       <div className="scroll-container">
-        <SmoothScroll />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
