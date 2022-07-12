@@ -4,6 +4,7 @@
   align-items: center;
   padding: 32px 16px 64px;
   gap: 24px;
+
   /* height: 1326px; */
 }
 
@@ -16,6 +17,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+
   /* height: 720px; */
 }
 

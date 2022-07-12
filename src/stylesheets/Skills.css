@@ -1,49 +1,55 @@
 .skills__container {
   display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px 16px 64px;
-gap: 32px;
-/* height: 1484px; */
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 64px;
+  gap: 32px;
+
+  /* height: 1484px; */
 }
 
-.skills__container__title{
+.skills__container__title {
   font-family: 'DM Sans', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
+
 .skills__container__skills {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-/* width: 330px; */
-/* height: 1356px; */
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+
+  /* width: 330px; */
+
+  /* height: 1356px; */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .skills__container__skills__skill {
   display: flex;
   flex-direction: column;
-align-items: flex-start;
-padding: 16px;
-gap: 10px;
-/* width: 330px; */
-/* height: 206px; */
-background: #1C1E22;
-border-radius: 8px;
-flex: none;
-order: 0;
-flex-grow: 0;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+
+  /* width: 330px; */
+
+  /* height: 206px; */
+  background: #1c1e22;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .skills__container__skills__skill__image {
@@ -54,27 +60,27 @@ flex-grow: 0;
 }
 
 .skills__container__skills__skill__title {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.15px;
-color: #FFFFFF;
-flex: none;
-order: 1;
-flex-grow: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #fff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .skills__container__skills__skill__description {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0.25px;
-color: #FFFFFF;
-flex: none;
-order: 2;
-flex-grow: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
