@@ -31,10 +31,6 @@
   top: 170px;
 }
 
-#mouse-scroll .down-arrow-1 {
-  margin-top: 6px;
-}
-
 #mouse-scroll .down-arrow-1,
 #mouse-scroll .down-arrow-2,
 #mouse-scroll .down-arrow-3 {
@@ -44,6 +40,7 @@
 }
 
 #mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;
