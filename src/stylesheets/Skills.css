@@ -46,6 +46,13 @@ order: 0;
 flex-grow: 0;
 }
 
+.skills__container__skills__skill__image {
+  width: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .skills__container__skills__skill__title {
   font-family: 'DM Sans';
 font-style: normal;
