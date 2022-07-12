@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 32px 16px 64px;
-  gap: 24px;
+  /* gap: 24px; */
 
   /* height: 1326px; */
 }
@@ -30,7 +30,7 @@
   text-align: center;
   letter-spacing: 0.25px;
   color: #fff;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .about__container__text__description {
@@ -51,8 +51,9 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  width: 200px;
 }
 
 .about__container__image__image {
-  width: 294px;
+  width: 100%;
 }
