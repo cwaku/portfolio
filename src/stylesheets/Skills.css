@@ -85,3 +85,23 @@
   order: 2;
   flex-grow: 0;
 }
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  .skills__container {
+    padding: 0px 165px 128px;
+    gap: 60px;
+  }
+
+  .skills__container__skills {
+    /* width: 1110px; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); */
+    /* three column grid */
+    grid-template-columns: 354px 354px 354px;
+    /* grid-auto-rows: auto; */
+    /* grid-gap: 24px; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: minmax(330px, 1fr); */
+  }
+}
