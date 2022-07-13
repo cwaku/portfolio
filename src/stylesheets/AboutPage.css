@@ -3,10 +3,6 @@
   flex-direction: column;
   align-items: center;
   padding: 32px 16px 64px;
-
-  /* gap: 24px; */
-
-  /* height: 1326px; */
 }
 
 .about__container__text {
@@ -18,8 +14,6 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-
-  /* height: 720px; */
 }
 
 .about__container__text__title {
