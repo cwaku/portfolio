@@ -126,15 +126,25 @@ const Navbar = (props) => {
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
-                  display: { xs: 'block', md: 'none' },
+                  display: {
+                    xs: 'block', md: 'none', backdropFilter: 'blur(10px)',
+                  },
                 }}
               >
                 {/* Adds a menu item to the navigation menu. */}
                 {pages.map((page) => (
-                  <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">
-                      <Link style={{ textDecoration: 'none', color: 'white' }} to={`/${page.title.toLowerCase()}`}>{page.title}</Link>
-                    </Typography>
+                  <MenuItem
+                    key={page.title}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      backgroundColor: '#171718',
+                      color: 'white',
+                      display: { xs: 'block' },
+                    }}
+                  >
+                    <Link style={{ textDecoration: 'none', color: 'white' }} to={`/${page.title.toLowerCase()}`}>
+                      {page.title}
+                    </Link>
                   </MenuItem>
                 ))}
               </Menu>
