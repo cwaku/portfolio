@@ -1,32 +1,109 @@
-import { useEffect } from 'react';
-import Scrollbar from 'smooth-scrollbar';
-import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
+/* eslint-disable */
+// Todo: Update update legacy code
 
-const overscrollOptions = {
-  enabled: true,
-  effect: 'bounce',
-  damping: 0.17,
-  maxOverscroll: 150,
-};
+import React from 'react';
+import PropTypes from 'prop-types';
+import SmoothScrollbar from 'smooth-scrollbar';
 
-const SmoothScroll = () => {
-  useEffect(() => {
-    Scrollbar.use(OverscrollPlugin);
-    Scrollbar.init(document.querySelector('.scroll-container'), {
-      damping: 0.05,
-      thumbMinSize: 10,
-      plugins: {
-        overscroll: { ...overscrollOptions },
-      },
-    });
+export const ScrollbarContext = React.createContext(null);
 
-    return () => {
-      if (Scrollbar) Scrollbar.destroy(document.querySelector('.scroll-container'));
+export default class Scrollbar extends React.Component {
+    static propTypes = {
+      damping: PropTypes.number,
+      thumbMinSize: PropTypes.number,
+      syncCallbacks: PropTypes.bool,
+      renderByPixels: PropTypes.bool,
+      alwaysShowTracks: PropTypes.bool,
+      continuousScrolling: PropTypes.bool,
+      wheelEventTarget: PropTypes.element,
+      plugins: PropTypes.object,
+      onScroll: PropTypes.func,
+      children: PropTypes.node,
+    }; // Todo: Find a better way to do this (to have PropTypes outside of the class)
+
+    static childContextTypes = {
+      getScrollbar: PropTypes.func,
     };
-  },
-  []);
 
-  return null;
-};
+    constructor(props) {
+      super(props);
 
-export default SmoothScroll;
+      this.callbacks = [];
+    }
+
+    getChildContext() {
+      return {
+        getScrollbar: (cb) => {
+          if (typeof cb !== 'function') return;
+
+          if (this.scrollbar) setTimeout(() => cb(this.scrollbar));
+          else this.callbacks.push(cb);
+        },
+      };
+    }
+
+    componentDidMount() {
+      this.scrollbar = SmoothScrollbar.init(this.$container, this.props);
+
+      this.callbacks.forEach((cb) => {
+        requestAnimationFrame(() => cb(this.scrollbar));
+      });
+
+      this.scrollbar.addListener(this.handleScroll.bind(this));
+    }
+
+    componentWillUnmount() {
+      if (this.scrollbar) {
+        this.scrollbar.destroy();
+      }
+    }
+
+    componentWillReceiveProps(nextProps) {
+      Object.keys(nextProps).forEach((key) => {
+        if (!key in this.scrollbar.options) {
+          return;
+        } //Todo:  componentWillReceiveProps is deprecated, use componentWillUpdate instead
+
+        if (key === 'plugins') {
+          Object.keys(nextProps.plugins).forEach((pluginName) => {
+            this.scrollbar.updatePluginOptions(pluginName, nextProps.plugins[pluginName]);
+          });
+        } else {
+          this.scrollbar.options[key] = nextProps[key];
+        }
+      });
+    }
+
+    componentDidUpdate() {
+      this.scrollbar && this.scrollbar.update();
+    }
+
+    handleScroll(status) {
+      if (this.props.onScroll) {
+        this.props.onScroll(status, this.scrollbar);
+      } // Todo: Use object destructuring to get the status
+    }
+
+    render() {
+      const {
+        damping,
+        thumbMinSize,
+        syncCallbacks,
+        renderByPixels,
+        alwaysShowTracks,
+        continuousScrolling,
+        wheelEventTarget,
+        plugins,
+
+        onScroll,
+        children,
+        ...others
+      } = this.props;
+
+      return (
+        <section data-scrollbar ref={(element) => this.$container = element} {...others}>
+          <div>{children}</div>
+        </section>
+      );
+    }
+}
