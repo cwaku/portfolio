@@ -25,7 +25,6 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-smooth-scrollbar": "^8.0.6",
     "react-typewriter-effect": "^1.1.0",
     "smooth-scrollbar": "^8.7.4",
     "three": "0.137.5",

@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router';
 import './stylesheets/App.css';
 import SmoothScrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
-// import Scrollbar from 'react-smooth-scrollbar';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -28,7 +27,6 @@ function App() {
     <div className="App">
       <Navbar />
       <CustomCursor />
-      {/* <SmoothScroll /> */}
       <Scrollbar
         className="scroll-container"
         damping={0.05}
