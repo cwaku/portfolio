@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router';
 import './stylesheets/App.css';
 import SmoothScrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
-import Scrollbar from 'react-smooth-scrollbar';
+// import Scrollbar from 'react-smooth-scrollbar';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,7 +12,8 @@ import Contact from './pages/Contact';
 import Footer from './components/footer/Footer';
 
 import CustomCursor from './components/customCursor/CustomCursor';
-// import SmoothScroll from './hooks/smoothScroll';
+import Scrollbar from './hooks/smoothScroll';
+
 SmoothScrollbar.use(OverscrollPlugin);
 
 const overscrollOptions = {
