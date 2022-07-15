@@ -9,6 +9,7 @@
 - JavaScript
 - React
 - Redux
+- React Three Fiber
 - Material-UI
 
 
