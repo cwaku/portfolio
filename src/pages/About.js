@@ -1,4 +1,5 @@
 import Skills from '../components/about/Skills';
+import TechSTack from '../components/about/Stack';
 
 import '../stylesheets/AboutPage.css';
 
@@ -36,6 +37,7 @@ const About = () => (
       </div>
     </div>
     <Skills />
+    <TechSTack />
   </div>
 );
 
