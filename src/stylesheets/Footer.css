@@ -20,6 +20,11 @@
   border-bottom: 1px solid #26292d;
 }
 
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__container__left a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -75,11 +80,6 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-footer ul a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .footer__container__second,
