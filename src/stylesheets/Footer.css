@@ -28,6 +28,7 @@
   line-height: 32px;
   color: #fff;
   text-decoration: none;
+  cursor: default;
 }
 
 .footer__container__second {
@@ -74,6 +75,11 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer__container__second,
