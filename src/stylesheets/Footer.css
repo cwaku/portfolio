@@ -1,11 +1,11 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 16px 32px;
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* height: 500px; */
 }
 
 .footer__container {
@@ -20,6 +20,11 @@
   border-bottom: 1px solid #26292d;
 }
 
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__container__left a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -28,6 +33,7 @@
   line-height: 32px;
   color: #fff;
   text-decoration: none;
+  cursor: default;
 }
 
 .footer__container__second {

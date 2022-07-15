@@ -53,13 +53,9 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding: 24px;
   gap: 24px;
   width: 334px;
-
-  /* height: 546px; */
   background: #26292d;
   border-radius: 8px;
   flex: none;
@@ -70,8 +66,6 @@
 .contact-form__label {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding: 0;
   gap: 8px;
 }
@@ -170,8 +164,6 @@
   .contact-container {
     padding: 64px 397px 128px;
     gap: 44px;
-
-    /* width: 1440px; */
   }
 
   .contact-content {

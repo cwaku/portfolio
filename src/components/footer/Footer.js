@@ -8,19 +8,18 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer__container">
       <div className="footer__container__left">
-        <a href="_top">RM</a>
+        <a href="/">RM</a>
       </div>
       <ul className="footer__container__second">
-        <li>Home</li>
-        <li>About me</li>
-        <li>Projects</li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About me</a></li>
+        <li><a href="/projects">Projects</a></li>
       </ul>
       <ul className="footer__container__second">
-        <li>Contact me</li>
-        <li>Mail</li>
+        <li><a href="/contact">Contact me</a></li>
       </ul>
       <div className="footer__container__social">
-        <p>Social</p>
+        <p>Socials</p>
         <ul className="social__links">
           <li><a href="https://www.linkedin.com/in/rickymormor/" aria-label="LinkedIn logo" target="_blank" rel="noreferrer"><FaLinkedin className="social__logo" /></a></li>
           <li><a href="https://github.com/cwaku" aria-label="Github logo" target="_blank" rel="noreferrer"><FaGithub className="social__logo" /></a></li>
