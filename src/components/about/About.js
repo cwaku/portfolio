@@ -1,5 +1,7 @@
 import '../../stylesheets/AboutMe.css';
 
+import { Link } from 'react-router-dom';
+
 const AboutMe = () => (
   <div className="about-me">
     <div className="about-me__container">
@@ -26,9 +28,9 @@ const AboutMe = () => (
           .
         </p>
         <button type="button" className="about-me__container__text__button header-button">
-          <a href="/about">
+          <Link to="/about">
             More about me
-          </a>
+          </Link>
         </button>
       </div>
       <div className="about-me__container__image">

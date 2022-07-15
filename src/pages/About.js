@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Skills from '../components/about/Skills';
 import TechSTack from '../components/about/Stack';
 
@@ -22,9 +24,9 @@ const About = () => (
           with the stakeholders.
         </p>
         <button type="button" className="about__container__text__button header-button">
-          <a href="/contact">
+          <Link to="/contact">
             Let&apos;s talk!
-          </a>
+          </Link>
         </button>
       </div>
       <div className="about__container__image">

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {
   FaLinkedin, FaGithub, FaTwitter, FaInstagram,
 } from 'react-icons/fa';
@@ -11,12 +13,12 @@ const Footer = () => (
         <a href="/">RM</a>
       </div>
       <ul className="footer__container__second">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">About me</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/about">About me</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
       </ul>
       <ul className="footer__container__second">
-        <li><a href="/contact">Contact me</a></li>
+        <li><Link to="/contact">Contact me</Link></li>
       </ul>
       <div className="footer__container__social">
         <p>Socials</p>
