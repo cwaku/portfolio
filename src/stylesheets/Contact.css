@@ -158,6 +158,7 @@
   order: 3;
   flex-grow: 0;
   border: 1px solid #5c62ec;
+  cursor: pointer;
 }
 
 /* Desktop version */
