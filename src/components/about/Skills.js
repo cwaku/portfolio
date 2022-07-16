@@ -6,7 +6,7 @@ const Skills = () => (
     <h1 className="skills__container__title">My abilities</h1>
     <div className="skills__container__skills">
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/device-mobile.png')} alt="mobile-device" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/device-mobile.png')} alt="mobile-device" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Code review</h2>
         <div className="skills__container__skills__skill__description">
           <p>
@@ -18,7 +18,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/Icon.png')} alt="Icon" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/Icon.png')} alt="Icon" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Coworking</h2>
         <div className="skills__container__skills__skill__description">
           <p>
@@ -28,7 +28,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/speakerphone.png')} alt="speakerphone" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/speakerphone.png')} alt="speakerphone" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Communication</h2>
         <div className="skills__container__skills__skill__description">
           <p>
@@ -38,7 +38,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/Icon (1).png')} alt="Icon(1)" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/Icon (1).png')} alt="Icon(1)" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Remote pair-programming</h2>
         <div className="skills__container__skills__skill__description">
           <p>
@@ -49,7 +49,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/Icon (2).png')} alt="Icon(2)" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/Icon (2).png')} alt="Icon(2)" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Iteration</h2>
         <div className="skills__container__skills__skill__description">
           <p>
@@ -59,7 +59,7 @@ const Skills = () => (
         </div>
       </div>
       <div className="skills__container__skills__skill">
-        <img src={require('../../assets/images/code.png')} alt="code" className="skills__container__skills__skill__image" />
+        <img loading="lazy" src={require('../../assets/images/code.png')} alt="code" className="skills__container__skills__skill__image" />
         <h2 className="skills__container__skills__skill__title">Full-stack Web Development</h2>
         <div className="skills__container__skills__skill__description">
           <p>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
+import { Partytown } from '@builder.io/partytown/react';
 
 import './stylesheets/App.css';
 import SmoothScrollbar from 'smooth-scrollbar';
@@ -34,37 +35,40 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {loading ? (
-        <ClimbingBoxLoader
-          color="#5c62ec"
-          loading={loading}
-          size={30}
-        />
-      ) : (
-        <>
-          <Navbar />
-          <CustomCursor />
-          <Scrollbar
-            className="scroll-container"
-            damping={0.05}
-            thumbMinSize={10}
-            plugins={{
-              overscroll: { ...overscrollOptions },
-            }}
-          >
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-            <Footer />
-          </Scrollbar>
-        </>
-      )}
-    </div>
+    <>
+      <Partytown debug forward={['dataLayer.push']} />
+      <div className="App">
+        {loading ? (
+          <ClimbingBoxLoader
+            color="#5c62ec"
+            loading={loading}
+            size={30}
+          />
+        ) : (
+          <>
+            <Navbar />
+            <CustomCursor />
+            <Scrollbar
+              className="scroll-container"
+              damping={0.05}
+              thumbMinSize={10}
+              plugins={{
+                overscroll: { ...overscrollOptions },
+              }}
+            >
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+              <Footer />
+            </Scrollbar>
+          </>
+        )}
+      </div>
+    </>
   );
 }
 

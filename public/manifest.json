@@ -1,23 +1,7 @@
 {
   "short_name": "Ricky Portfolio",
   "name": "Ricky Mormor Portfolio",
-  "icons": [
-    {
-      "src": "",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "",
-      "type": "",
-      "sizes": "512x512"
-    }
-  ],
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

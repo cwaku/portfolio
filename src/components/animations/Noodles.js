@@ -46,8 +46,8 @@ function Noodle() {
     <Float
       position={position}
       speed={speed}
-      rotationIntensity={10}
-      floatIntensity={40}
+      rotationIntensity={30}
+      floatIntensity={40.6}
       dispose={null}
     >
       <mesh scale={5} geometry={geometry} material={material} />

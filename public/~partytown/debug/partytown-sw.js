@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* Partytown 0.6.2 - MIT builder.io */
 const resolves = new Map;
 
