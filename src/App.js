@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 
 import './stylesheets/App.css';
 import SmoothScrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
+import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -23,27 +25,45 @@ const overscrollOptions = {
 };
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div className="App">
-      <Navbar />
-      <CustomCursor />
-      <Scrollbar
-        className="scroll-container"
-        damping={0.05}
-        thumbMinSize={10}
-        plugins={{
-          overscroll: { ...overscrollOptions },
-        }}
-      >
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Scrollbar>
+      {loading ? (
+        <ClimbingBoxLoader
+          color="#5c62ec"
+          loading={loading}
+          size={30}
+        />
+      ) : (
+        <>
+          <Navbar />
+          <CustomCursor />
+          <Scrollbar
+            className="scroll-container"
+            damping={0.05}
+            thumbMinSize={10}
+            plugins={{
+              overscroll: { ...overscrollOptions },
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </Scrollbar>
+        </>
+      )}
     </div>
   );
 }

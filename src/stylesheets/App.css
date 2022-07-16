@@ -8,6 +8,9 @@
   overflow: hidden;
   background-color: #171718;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll-container {
