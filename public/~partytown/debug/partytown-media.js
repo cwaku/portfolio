@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* Partytown 0.6.2 - MIT builder.io */
 (self => {
     const [getter, setter, callMethod, constructGlobal, definePrototypePropertyDescriptor, randomId, WinIdKey, InstanceIdKey, ApplyPathKey] = self.$bridgeToMedia$;
