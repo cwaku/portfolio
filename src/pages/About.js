@@ -35,6 +35,7 @@ const About = () => (
           src={require('../assets/images/profile-pic (1).png')}
           alt="about-me"
           className="about__container__image__image"
+          loading="lazy"
         />
       </div>
     </div>
