@@ -63,7 +63,7 @@ export default class Scrollbar extends React.Component {
       Object.keys(nextProps).forEach((key) => {
         if (!key in this.scrollbar.options) {
           return;
-        } //Todo:  componentWillReceiveProps is deprecated, use componentWillUpdate instead
+        }
 
         if (key === 'plugins') {
           Object.keys(nextProps.plugins).forEach((pluginName) => {
@@ -76,10 +76,6 @@ export default class Scrollbar extends React.Component {
 
       this.scrollbar && this.scrollbar.update();
     }
-
-    // componentDidUpdate() {
-    //   this.scrollbar && this.scrollbar.update();
-    // }
 
     handleScroll(status) {
       if (this.props.onScroll) {
