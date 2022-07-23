@@ -50,7 +50,7 @@ function App() {
             <CustomCursor />
             <Scrollbar
               className="scroll-container"
-              damping={0.05}
+              damping={0.10}
               thumbMinSize={10}
               plugins={{
                 overscroll: { ...overscrollOptions },
