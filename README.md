@@ -79,6 +79,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Kindly have a read at the [CONTRIBUTING.md](https://github.com/cwaku/portfolio/blob/develop/CONTRIBUTING.md)
 
 Feel free to check the [issues page](https://github.com/cwaku/portfolio/issues).
 
