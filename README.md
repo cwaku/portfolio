@@ -88,3 +88,4 @@ Feel free to check the [issues page](https://github.com/cwaku/portfolio/issues).
 Give a ⭐️ if you like this project!
 
 ## 📝 License
+[MIT License](https://github.com/cwaku/portfolio/blob/develop/LICENSE)
