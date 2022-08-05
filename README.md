@@ -80,7 +80,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/cwaku/covid-19-data/issues).
+Feel free to check the [issues page](https://github.com/cwaku/portfolio/issues).
 
 ## Show your support
 
