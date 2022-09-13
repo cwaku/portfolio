@@ -1,5 +1,6 @@
 /* eslint-disable */
-// Todo: Update update legacy code
+
+// Todo: Update update legacy code (contextAPI)
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -58,11 +59,11 @@ export default class Scrollbar extends React.Component {
       }
     }
 
-    componentWillReceiveProps(nextProps) {
+    componentDidUpdate(nextProps) {
       Object.keys(nextProps).forEach((key) => {
         if (!key in this.scrollbar.options) {
           return;
-        } //Todo:  componentWillReceiveProps is deprecated, use componentWillUpdate instead
+        }
 
         if (key === 'plugins') {
           Object.keys(nextProps.plugins).forEach((pluginName) => {
@@ -72,9 +73,7 @@ export default class Scrollbar extends React.Component {
           this.scrollbar.options[key] = nextProps[key];
         }
       });
-    }
 
-    componentDidUpdate() {
       this.scrollbar && this.scrollbar.update();
     }
 
