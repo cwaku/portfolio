@@ -8,15 +8,13 @@ const AboutMe = () => (
       <div className="about-me__container__text">
         <h1 className="about-me__container__text__title">About Me</h1>
         <p className="about-me__container__text__description">
-          A highly motivated Full-stack Engineer and Blockchain enthusiast
-          who likes to challenge himself with the latest trends.
-          I am looking for companies that value creativity, hard work, and leadership.
-          I am dedicated to creating and properly maintaining web apps with a passion
-          for creative solutions. While it all started as an interest in code, later on,
-          I found myself E-learning and studying by myself through online courses until
-          I enrolled in Microverse Program.
-          I am
-          currently working as a technical support engineer at
+          Logical and results-driven Full Stack developer with a strong love for Front
+          End. Dedicated to building user-focused applications using javascript,
+          Typescript, Ruby, Ruby on Rails, ReactJS & Next.js. Judicious and
+          creative when crafting effective solutions to propel competitive
+          advantage and revenue growth under client&apos;s requirements. Analytical
+          problem solver with a calm and focused demeanor and open to receiving
+          feedback. I am currently working part-time as a technical support engineer at
           {' '}
           <a
             href="https://www.linkedin.com/school/microverseinc/mycompany/"
@@ -27,16 +25,18 @@ const AboutMe = () => (
           </a>
           .
         </p>
-        <button type="button" className="about-me__container__text__button header-button">
-          <Link to="/about">
-            More about me
-          </Link>
+        <button
+          type="button"
+          className="about-me__container__text__button header-button"
+        >
+          <Link to="/about">More about me</Link>
         </button>
       </div>
       <div className="about-me__container__image">
         <img
+          style={{ borderRadius: '50%' }}
           // eslint-disable-next-line global-require
-          src={require('../../assets/images/profile-pic (1).png')}
+          src={require('../../assets/images/use.jpeg')}
           alt="about-me"
           className="about-me__container__image__image"
           loading="lazy"

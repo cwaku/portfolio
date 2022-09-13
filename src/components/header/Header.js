@@ -69,13 +69,10 @@ const Header = () => (
             pauseDelay={3000}
             cursorColor="#3F3D56"
             multiText={[
-              'Software Engineer',
-              'Front-end Developer',
               'Full-stack Developer',
+              'Front-end Developer',
               'Back-end Developer',
               'Technical Support Engineer',
-              'Blockchain Enthusiast',
-              'Entrepreneur',
               'Mentor',
             ]}
             multiTextDelay={3000}
@@ -97,7 +94,7 @@ const Header = () => (
             </a>
           </button>
           <button type="button" className="header-button-cv header-button">
-            <a href="https://docs.google.com/document/d/1WbBJTasEmBGsHS8DfCMaoht3Gh2oel7ijTDqKNaq1Ak/edit?usp=sharing" target="_blank" download rel="noreferrer">
+            <a href="https://drive.google.com/file/d/1uRal6I-inPMM3MmwC2RH_UHft1RYaEH0/view?usp=sharing" target="_blank" download rel="noreferrer">
               Download CV
             </a>
           </button>
