@@ -14,6 +14,10 @@ const Contact = () => {
       </div>
       <div>
         <form className="contact-form" onSubmit={handleSubmit}>
+          <label className="contact-form__label contact-form__subject" htmlFor="subject">
+            Subject
+            <input className="name__input" type="text" name="subject" id="subject" placeholder="Subject" required />
+          </label>
           <label className="contact-form__label contact-form__name" htmlFor="name">
             Your name
             <input className="name__input" type="text" name="name" id="name" placeholder="Name" required />
