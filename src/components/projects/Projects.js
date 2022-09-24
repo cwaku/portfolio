@@ -3,6 +3,7 @@
 import React from 'react';
 
 import '../../stylesheets/Skills.css';
+import { projectImages } from '../../data/images';
 
 // eslint-disable-next-line react/prop-types
 const Projects = ({ projects }) => (
@@ -15,12 +16,17 @@ const Projects = ({ projects }) => (
           key={project.id}
         >
           <div className="projects__container__projects__project__image">
-            <img
-              style={{ width: '100%' }}
-              loading="lazy"
-              src={project.owner.avatar_url}
-              alt="avatar"
-            />
+            {projectImages
+              .filter((image) => image.name === project.name)
+              .map((image) => (
+                <img
+                  style={{ width: '100%' }}
+                  loading="lazy"
+                  src={image.image}
+                  key={image.id}
+                  alt={project.name}
+                />
+              ))}
           </div>
           <div className="projects__container__projects__project__description">
             <div>
@@ -41,14 +47,14 @@ const Projects = ({ projects }) => (
                 </a>
               </button>
               {project.homepage && (
-              <button
-                type="button"
-                className="header-button-cv header-button"
-              >
-                <a href={project.homepage} target="_blank" rel="noreferrer">
-                  Live
-                </a>
-              </button>
+                <button
+                  type="button"
+                  className="header-button-cv header-button"
+                >
+                  <a href={project.homepage} target="_blank" rel="noreferrer">
+                    Live
+                  </a>
+                </button>
               )}
             </div>
           </div>
