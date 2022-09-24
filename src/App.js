@@ -48,7 +48,6 @@ function App() {
           (repo) => repo.owner.login === GITHUB_USERNAME,
         );
         setProjects(myRepositories);
-        console.log(myRepositories);
         setLoading(false);
       });
   }, []);
