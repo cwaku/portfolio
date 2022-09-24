@@ -1,11 +1,13 @@
-.skills__container {
+.skills__container,
+.projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 16px 64px;
 }
 
-.skills__container__title {
+.skills__container__title,
+.projects__container__title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +19,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills {
+.skills__container__skills,
+.projects__container__projects {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,7 +31,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills__skill {
+.skills__container__skills__skill,
+.projects__container__projects__project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,6 +45,10 @@
   flex-grow: 0;
 }
 
+.projects__container__projects__project {
+  align-items: center;
+}
+
 .skills__container__skills__skill__image {
   width: 50px;
   flex: none;
@@ -48,7 +56,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills__skill__title {
+.skills__container__skills__skill__title,
+.projects__container__projects__project__description__title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -62,7 +71,8 @@
   margin: 0;
 }
 
-.skills__container__skills__skill__description {
+.skills__container__skills__skill__description,
+.projects__container__projects__project__description__text {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,14 +85,40 @@
   flex-grow: 0;
 }
 
+.projects__container__projects__project__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.projects__container__projects__project__description__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  width: 100%;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  justify-content: space-around;
+}
+
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .skills__container {
+  .skills__container,
+  .projects__container {
     padding: 0 165px 128px;
     gap: 60px;
   }
 
-  .skills__container__skills {
+  .skills__container__skills,
+  .projects__container__projects {
     display: grid;
     grid-template-columns: 354px 354px 354px;
   }
