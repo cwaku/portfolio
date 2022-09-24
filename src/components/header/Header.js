@@ -51,7 +51,11 @@ function Overlay() {
 const Header = () => (
   <>
     <div className="header">
-      <Canvas className="Canvass" dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
+      <Canvas
+        className="Canvass"
+        dpr={[1, 2]}
+        camera={{ position: [0, 0, 10], fov: 22 }}
+      >
         <Bg />
         <Suspense fallback={null}>
           <Noodles />
@@ -88,13 +92,16 @@ const Header = () => (
           </p>
         </div>
         <div className="header-content-details-contact">
-          <button type="button" className="header-button-see-projects header-button">
-            <a href="https://github.com/cwaku" target="_blank" rel="noreferrer">
-              See Projects
-            </a>
-          </button>
-          <button type="button" className="header-button-cv header-button">
-            <a href="https://drive.google.com/file/d/1uRal6I-inPMM3MmwC2RH_UHft1RYaEH0/view?usp=sharing" target="_blank" download rel="noreferrer">
+          <button
+            type="button"
+            className="header-button-see-projects header-button"
+          >
+            <a
+              href="https://drive.google.com/file/d/1uRal6I-inPMM3MmwC2RH_UHft1RYaEH0/view?usp=sharing"
+              target="_blank"
+              download
+              rel="noreferrer"
+            >
               Download CV
             </a>
           </button>
