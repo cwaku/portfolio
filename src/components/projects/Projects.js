@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import React, { useEffect } from 'react';
 import { Octokit } from '@octokit/core';
 import { GITHUB_TOKEN, GITHUB_USERNAME } from '../../apiKeys';
@@ -52,13 +54,19 @@ const Projects = () => {
                 </p>
               </div>
               <div className="projects__container__projects__project__description__links">
-                <button type="button" className="header-button-see-projects header-button">
+                <button
+                  type="button"
+                  className="header-button-see-projects header-button"
+                >
                   <a href={project.html_url} target="_blank" rel="noreferrer">
                     Source
                   </a>
                 </button>
                 {project.homepage && (
-                  <button type="button" className="header-button-cv header-button">
+                  <button
+                    type="button"
+                    className="header-button-cv header-button"
+                  >
                     <a href={project.homepage} target="_blank" rel="noreferrer">
                       Live
                     </a>
