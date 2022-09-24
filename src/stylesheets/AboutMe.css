@@ -23,8 +23,8 @@
   flex-grow: 0;
 }
 
-.about-me__container__text__title {
-  margin: 0;
+.about-me__container__text__title,
+.projects__container__title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 237px 128px;
+    padding: 0 237px 45px;
   }
 
   .about-me__container {
@@ -87,7 +87,8 @@
     width: 326.33px;
   }
 
-  .about-me__container__text__title {
+  .about-me__container__text__title,
+  .projects__container__title {
     font-weight: 500;
     font-size: 48px;
     line-height: 57px;
