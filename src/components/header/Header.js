@@ -2,7 +2,11 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
-  FaLinkedin, FaGithub, FaTwitter, FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaTiktok,
 } from 'react-icons/fa';
 import { Rig, Bg, Caption } from '../animations/NoodlesUtils';
 import Noodles from '../animations/Noodles';
@@ -26,6 +30,7 @@ function Overlay() {
         <li><a href="https://github.com/cwaku" aria-label="Github logo" target="_blank" rel="noreferrer"><FaGithub /></a></li>
         <li><a href="https://twitter.com/rickymormor" aria-label="Twitter logo" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
         <li><a href="https://instagram.com/rickymormor" aria-label="Instagram logo" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+        <li><a href="https://tiktok.com/@rickymormor" aria-label="Tiktok logo" target="_blank" rel="noreferrer"><FaTiktok /></a></li>
       </ul>
       <div style={{
         position: 'absolute', top: 40, left: 40, fontSize: '13px',
