@@ -21,7 +21,6 @@ const Projects = () => {
         const myRepositories = response.data.filter(
           (repo) => repo.owner.login === GITHUB_USERNAME,
         );
-        console.log(myRepositories);
         setProjects(myRepositories);
       });
   }, []);
