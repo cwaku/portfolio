@@ -21,6 +21,7 @@
   flex-grow: 0;
 }
 
-.nextjs-logo {
+.nextjs-logo,
+.threejs {
   height: 48px;
 }
