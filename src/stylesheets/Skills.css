@@ -1,4 +1,5 @@
-.skills__container {
+.skills__container,
+.projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +18,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills {
+.skills__container__skills,
+.projects__container__projects {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,7 +30,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills__skill {
+.skills__container__skills__skill,
+.projects__container__projects__project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,6 +44,10 @@
   flex-grow: 0;
 }
 
+.projects__container__projects__project {
+  align-items: center;
+}
+
 .skills__container__skills__skill__image {
   width: 50px;
   flex: none;
@@ -48,7 +55,8 @@
   flex-grow: 0;
 }
 
-.skills__container__skills__skill__title {
+.skills__container__skills__skill__title,
+.projects__container__projects__project__description__title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -62,7 +70,8 @@
   margin: 0;
 }
 
-.skills__container__skills__skill__description {
+.skills__container__skills__skill__description,
+.projects__container__projects__project__description__text {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,19 +84,112 @@
   flex-grow: 0;
 }
 
+.projects__container__projects__project__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.projects__container__projects__project__description__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  width: 100%;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  justify-content: space-around;
+}
+
+.projects__container__projects__project:hover {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .skills__container {
+  .skills__container,
+  .projects__container {
     padding: 0 165px 128px;
     gap: 60px;
   }
 
-  .skills__container__skills {
+  .skills__container__skills,
+  .projects__container__projects {
     display: grid;
     grid-template-columns: 354px 354px 354px;
   }
 
   .skills__container__skills__skill {
     height: 245px;
+  }
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
 }

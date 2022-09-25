@@ -18,8 +18,7 @@ import { Link } from 'react-router-dom';
 const pages = [
   { title: 'Home', appBarSx: { display: { xs: 'none', md: 'block' } } },
   { title: 'About', appBarSx: { display: { xs: 'none', md: 'block' } } },
-  { title: 'Projects', appBarSx: { display: { xs: 'block' } } },
-  { title: 'Contact', appBarSx: { display: { xs: 'none', md: 'block' } } },
+  { title: 'Contact', appBarSx: { display: { xs: 'block', md: 'block' } } },
 ];
 
 // Hide On Scroll
