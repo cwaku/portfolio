@@ -102,7 +102,7 @@ const Header = () => (
             className="header-button-see-projects header-button"
           >
             <a
-              href="https://drive.google.com/file/d/10_4gs7KFJfxL7cB0Y6aa2NgKXD4wMvgO/view?usp=sharing"
+              href="https://docs.google.com/document/d/1CloOmlLPdREh4FkDUgPdzb_uadRBB3fUZXwi7k-eMqc/edit?usp=sharing"
               target="_blank"
               download
               rel="noreferrer"
