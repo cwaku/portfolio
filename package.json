@@ -29,6 +29,7 @@
     "react-spinners": "^0.13.3",
     "react-typewriter-effect": "^1.1.0",
     "smooth-scrollbar": "^8.7.4",
+    "styled-components": "^5.3.6",
     "three": "0.137.5",
     "web-vitals": "^2.1.4"
   },
