@@ -42,7 +42,7 @@ function Overlay() {
         position: 'absolute', bottom: 40, right: 40, fontSize: '13px',
       }}
       >
-        good —
+        verified developer —
       </div>
       <ScrollAnimation
         style={{
