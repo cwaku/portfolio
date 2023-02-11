@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* Partytown 0.6.2 - MIT builder.io */
 (window => {
     const isPromise = v => "object" == typeof v && v && v.then;
