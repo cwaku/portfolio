@@ -37,7 +37,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: 0.44px;
   color: #fff;
   flex: none;
@@ -91,6 +91,5 @@
   .projects__container__title {
     font-weight: 500;
     font-size: 48px;
-    line-height: 57px;
   }
 }
