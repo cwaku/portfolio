@@ -8,11 +8,16 @@ const AboutMe = () => (
       <div className="about-me__container__text">
         <h1 className="about-me__container__text__title">About Me</h1>
         <p className="about-me__container__text__description">
-          Results-driven Senior Software Developer with over four years of experience in full-stack development,
-          specializing in Elixir, Ruby, JavaScript, and Ruby on Rails. Expertise in building scalable microservices,
-          architecting cloud-based solutions, and deploying cross-platform financial systems compliant with ISO-8583 standards.
-          Proven track record of driving efficiency, implementing modern coding practices, and mentoring teams.
-          Recipient of the Global Techsprint Leadership Award 2023, recognized for innovation and leadership in the tech industry.
+          Results-driven Senior Software Developer with over four years of experience
+          in full-stack development,
+          specializing in Elixir, Ruby, JavaScript, and Ruby on Rails. Expertise in
+          building scalable microservices,
+          architecting cloud-based solutions, and deploying cross-platform
+          financial systems compliant with ISO-8583 standards.
+          Proven track record of driving efficiency,
+          implementing modern coding practices, and mentoring teams.
+          Recipient of the Global Techsprint Leadership Award 2023,
+          recognized for innovation and leadership in the tech industry.
         </p>
         <button
           type="button"
