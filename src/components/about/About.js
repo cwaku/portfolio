@@ -8,22 +8,11 @@ const AboutMe = () => (
       <div className="about-me__container__text">
         <h1 className="about-me__container__text__title">About Me</h1>
         <p className="about-me__container__text__description">
-          Logical and results-driven Full Stack developer with a strong love for Front
-          End. Dedicated to building user-focused applications using javascript,
-          Typescript, Ruby, Ruby on Rails, ReactJS & Next.js. Judicious and
-          creative when crafting effective solutions to propel competitive
-          advantage and revenue growth under client&apos;s requirements. Analytical
-          problem solver with a calm and focused demeanor and open to receiving
-          feedback. I am currently working part-time as a technical support engineer at
-          {' '}
-          <a
-            href="https://www.linkedin.com/school/microverseinc/mycompany/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Microverse
-          </a>
-          .
+          Results-driven Senior Software Developer with over four years of experience in full-stack development,
+          specializing in Elixir, Ruby, JavaScript, and Ruby on Rails. Expertise in building scalable microservices,
+          architecting cloud-based solutions, and deploying cross-platform financial systems compliant with ISO-8583 standards.
+          Proven track record of driving efficiency, implementing modern coding practices, and mentoring teams.
+          Recipient of the Global Techsprint Leadership Award 2023, recognized for innovation and leadership in the tech industry.
         </p>
         <button
           type="button"
